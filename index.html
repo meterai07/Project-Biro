@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="btn-wrapper">
+          <ul>
+            <li>
+              <a href="#pengertian" class="btn satu"><b>EMIF</b></a>
+            </li>
+            <li>
+              <a href="#departemen" class="btn dua"><b>Departemen</b></a>
+            </li>
+            <li>
+              <a href="#biro" class="btn tiga"><b>Biro</b></a>
+            </li>
+            <li>
+              <a href="./ProjectBiroPage2.html" class="btn empat"
+                ><b>Staff Muda</b></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="banner">
+        <div class="sub-header">
+          <h1>EMIF</h1>
+          <h3>Eksekutif Mahasiswa Informatika</h3>
+        </div>
+      </div>
+      <main>
+        <div class="content">
+          <div class="space"></div>
+          <div class="pengertian" id="pengertian">
+            <div class="logo-emif">
+              <img src="logo-emif.png" alt="logo EMIF" />
+            </div>
+            <p>
+              Eksekutif Mahasiswa Informatika atau EMIF adalah lembaga yang
+              memiliki fungsi sebagai badan eksekutif
+            </p>
+          </div>
+          <div class="space"></div>
+          <div class="visimisi">
+            <div class="visi">
+              <h3>VISI</h3>
+              <p>
+                Mewujudkan HMIF yang menjunjung nilai kekeluargaan dalam
+                merealisasikan kebutuhan dan pengembangan potensi diri seluruh
+                anggota HMIF
+              </p>
+            </div>
+            <div class="misi">
+              <h3>MISI</h3>
+              <ul>
+                <p>
+                  1. Menciptakan Kondisi yang nyaman dan terbuka dalam Himpunan
+                  Mahasiswa Informatika untuk memperkuat rasa kekeluargaan
+                  seluruh anggota Himpunan Mahasiswa informatika
+                </p>
+                <p>
+                  2. Mengadvokasikan kebutuhan dari anggota Himpunan Mahasiswa
+                  Informatika sebagai upaya untuk mensejahterakan anggota
+                  Himpunan Mahasiswa Informatika
+                </p>
+                <p>
+                  3. Menciptakan wadah untuk seluruh anggota Himpunan Mahasiswa
+                  Informatika dalam peningkatan kemampuan diri yang mencukup
+                  keilmuan, keprofesian, dan minat bakat
+                </p>
+              </ul>
+            </div>
+          </div>
+          <div class="space"></div>
+          <div class="departemen-biro">
+            <div class="departemen" id="departemen">
+              <h3>DEPARTEMEN</h3>
+              <div class="PSDM">
+                <h4>PSDM</h4>
+                <p>
+                  Bergerak sebagai sarana pembinaan kepribadian dan menjadi
+                  pusat kaderisasi Himpunan Mahasiswa Informatika, serta sarana
+                  untuk mengasah menggali, dan mengarahkan potensi dalam hal
+                  minat dan bakat anggota HMIF.
+                </p>
+              </div>
+              <div class="ADVOKESMA">
+                <h4>ADVOKESMA</h4>
+                <p>
+                  Bergerak sebagai jembatan antara mahasiswa informatika dengan
+                  birokrat untuk memperjuangkan hak dan kebutuhan mahasiswa
+                  informatika dan meningkatkan kesejahteraan mahasiswa melalui
+                  persebaran informasi.
+                </p>
+              </div>
+              <div class="PIP">
+                <h4>PIP</h4>
+                <p>
+                  Bergerak sebagai sarana pengembangan keilmuan guna membantu
+                  mahasiswa informatika dalam menempuh dunia perkuliahan serta
+                  membantu mahasiswa informatika mengembangakn potensi dalam
+                  diri untuk mempersiapkan dunia kerja.
+                </p>
+              </div>
+              <div class="SOSMA">
+                <h4>SOSMA</h4>
+                <p>
+                  Bergerak sebagai perwujudan Tri Dharma Perguruan Tinggi yaitu
+                  pengabdian masyarakat serta sebagai bentuk kepedulian sosial
+                  masayarakat mahasiswa informatika dengan mengkaji isu - isu
+                  sosial yang ada di sekitar.
+                </p>
+              </div>
+            </div>
+            <div class="space"></div>
+            <div class="biro" id="biro">
+              <h3>BIRO</h3>
+              <div class="BUMH">
+                <h4>BUMH</h4>
+                <p>
+                  Bergerak sebagai badan usaha yang dimiliki oleh HMIF FILKOM UB
+                </p>
+              </div>
+              <div class="IT">
+                <h4>IT</h4>
+                <p>
+                  Bergerak sebagai penopang kebutuhan EMIF FILKOM UB dibidang
+                  pengembangan teknologi
+                </p>
+              </div>
+              <div class="KOMINFO">
+                <h4>KOMINFO</h4>
+                <p>
+                  Bergerak sebagai penghubung antara EMIF FILKOM UB dengan pihak
+                  eksternal sekaligus sebagai penyebar informasi penting untuk
+                  seluruh mahasiswa informatika dan penggerak seluruh anggota
+                  HMIF FILKOM UB untuk melakukan apresisasi pada saat wisuda
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.querySelector("nav").style.top = "0";
+        } else {
+          document.querySelector("nav").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+    <footer>
+      <h5>Developed by Staf Muda Biro IT</h5>
+      <h6>© 2021</h6>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  --fw-reg: 300;
+  --fw-bold: 900;
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+body {
+  background-image: url("halo3.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  animation: transitionIn 0.75s;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+header {
+  color: white;
+  height: auto;
+  width: auto;
+  padding-bottom: 5px;
+}
+
+nav {
+  position: fixed;
+  transition: top 0.3s;
+  /* padding-bottom: 0px; */
+  width: 100%;
+  text-align: center;
+  background-color: rgb(3, 48, 78);
+  box-shadow: 0 4px 10px 0px black;
+}
+
+nav ul li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: inline-block;
+}
+
+nav a {
+  /* float: left;
+  display: block; */
+  color: black;
+  text-decoration: none;
+}
+
+.logoEmif {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  padding-top: 100px;
+}
+
+.Departemen-Header {
+  background-image: url("bg1.png");
+  background-size: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: var(--clr-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 5cm;
+}
+
+.Departemen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+}
+
+.Departemen-Sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 382px;
+  height: 170px;
+  background-color: #3b5998;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 25px;
+  box-shadow: 5px 5px;
+  border-width: 5px;
+  border-style: ridge;
+}
+
+.Departemen-Sub:hover {
+  border: 1px solid #777;
+}
+
+.Biro-Header {
+  background-image: url("bg1.png");
+  background-size: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  color: var(--clr-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 5cm;
+}
+
+.Biro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+}
+
+.Biro-Sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 382px;
+  height: 200px;
+  background-color: #3b5998;
+  border-radius: 20px;
+  box-shadow: 5px 5px;
+  border-width: 5px;
+  border-style: ridge;
+  /* background-image: url('./Images/lemmling-Blank-sticky-note-1.png');
+    background-size: 594px 670px;
+    background-clip: unset;
+    float: left;
+    object-fit: cover; */
+  padding: 25px;
+  margin: 20px;
+  margin-bottom: 5cm;
+}
+
+.Biro-Sub:hover {
+  border: 1px solid #777;
+}
+
+.Box {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  padding: 35px;
+}
+
+h3 {
+  color: lightgray;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Contact {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+}
+
+footer {
+  background-color: #3b5998;
+}
+
+footer h5 {
+  font-size: 18px;
+  padding: 20px 0px 10px 0px;
+  text-align: center;
+}
+
+footer h6 {
+  font-size: 16px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Photos {
+  background-color: #7c93c4;
+  margin: 30px;
+  margin-bottom: 3cm;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  border-radius: 20px;
+  box-shadow: 5px 5px;
+  border-width: 5px;
+  border-style: ridge;
+}
+
+.Photos img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.Desc {
+  padding: 15px;
+  text-align: center;
+}
